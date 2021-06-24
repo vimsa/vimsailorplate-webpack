@@ -7,20 +7,17 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin")
 const TerserPlugin = require("terser-webpack-plugin");
 
-
 const IS_DEVELOPMENT = process.env.NODE_ENV === 'dev'
 
-const dirApp = path.join(__dirname, "../src/app")
-const dirStyles = path.join(__dirname, "../src/styles")
-const dirStatic = path.join(__dirname, "../src/static")
-const dirNode = path.join(__dirname, "../node_modules")
-
-// console.log(dirApp, dirStyles, dirStatic, dirNode)
+const DIR_APP = path.join(__dirname, "../src/app")
+const DIR_STYLES = path.join(__dirname, "../src/styles")
+const DIR_STATIC = path.join(__dirname, "../src/static")
+const DIR_NODE = path.join(__dirname, "../node_modules")
 
 module.exports = {
    entry: [
-      path.join(dirApp, "index.js"),
-      path.join(dirStyles, "index.scss")
+      path.join(DIR_APP, "index.js"),
+      path.join(DIR_STYLES, "index.scss")
    ],
 
    output: {
@@ -30,10 +27,10 @@ module.exports = {
 
    resolve: {
       modules: [
-         dirApp,
-         dirStyles,
-         dirStatic,
-         dirNode
+         DIR_APP,
+         DIR_STYLES,
+         DIR_STATIC,
+         DIR_NODE
       ],
    },
 

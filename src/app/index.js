@@ -1,1 +1,1 @@
-import image from 'images/Avatar.jpg'
+console.log("Hello World")
