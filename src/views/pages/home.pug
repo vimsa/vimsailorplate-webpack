@@ -1,13 +1,11 @@
-extends ../index.pug
+extends ../base.pug
 
 block variables
   - var template = 'home'
 
 block content
    .home
-      .home__wrapper 
-         ul.menu
-            each val in [1, 2, 3, 4, 5]
-               li= val
+      .home__wrapper
+         h1.home__title Home
 
 
