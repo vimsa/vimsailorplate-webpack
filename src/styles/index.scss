@@ -1,6 +1,3 @@
-$color-white: #fff;
-$color-black: #000;
+@import './utils/color.scss';
 
-.class {
-   color: $color-white;
-}
+@import './pages/home/home.scss';
