@@ -1,4 +1,4 @@
-# VIMSA Boilerplate
+# VIMSΛ Boilerplate
 
 ## Setup
 
