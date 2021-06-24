@@ -6,12 +6,12 @@ html(lang="en")
       meta(name="viewport", content="width=device-width, initial-scale=1.0")
       title VIMSΛ
 
-      style
-         include ../../dist/main.css
+      link(href="main.css" rel="stylesheet")
    body
       main
          div(data-scroll)
             .content#content(data-template)
+               block content
       #canvas.js-canvas
 
-   script(src="app/index.js")
+   script(src="main.js")

@@ -12,18 +12,13 @@ const IS_DEVELOPMENT = process.env.NODE_ENV === 'dev'
 const DIR_APP = path.join(__dirname, "../src/app")
 const DIR_STYLES = path.join(__dirname, "../src/styles")
 const DIR_STATIC = path.join(__dirname, "../src/static")
-const DIR_NODE = path.join(__dirname, "../node_modules")
+const DIR_NODE = "../node_modules"
 
 module.exports = {
    entry: [
       path.join(DIR_APP, "index.js"),
       path.join(DIR_STYLES, "index.scss")
    ],
-
-   output: {
-      filename: 'bundle.[hash].js',
-      path: path.resolve(__dirname, '../dist')
-   },
 
    resolve: {
       modules: [
