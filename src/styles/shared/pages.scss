@@ -1,0 +1,9 @@
+%page {
+   @extend %cover;
+
+   z-index: z("content");
+}
+
+%page__wrapper {
+   color: inherit;
+}

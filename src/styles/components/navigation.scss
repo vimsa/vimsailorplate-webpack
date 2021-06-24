@@ -1,0 +1,18 @@
+.navigation {
+   @extend %page;
+}
+.navigation__wrapper {
+   display: flex;
+   justify-content: space-between;
+   padding: 1.875rem;
+}
+.navigation__link {
+}
+.navigation__list {
+   display: flex;
+}
+.navigation__list__item {
+}
+.navigation__list__link {
+   display: block;
+}

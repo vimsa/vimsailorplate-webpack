@@ -10,7 +10,7 @@ app.set('view engine', 'pug')
 app.get("/", (req, res) => {
    res.render("pages/home", {
       meta: {
-         title: "VIMSΛ",
+         title: "VIMSΛ Boilerplate",
          description: "Surya Aditya - Creative developer"
       }
    })
@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
 app.get("/about", (req, res) => {
    res.render("pages/about", {
       meta: {
-         title: "VIMSΛ",
+         title: "VIMSΛ Boilerplate",
          description: "Surya Aditya - Creative developer"
       }
    })
@@ -28,7 +28,7 @@ app.get("/about", (req, res) => {
 app.get("/work", (req, res) => {
    res.render("pages/work", {
       meta: {
-         title: "VIMSΛ",
+         title: "VIMSΛ Boilerplate",
          description: "Surya Aditya - Creative developer"
       }
    })
